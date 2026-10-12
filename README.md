@@ -60,20 +60,22 @@ In strict adherence to the Hacktoberfest *"Touch Grass"* mandate (*"Make the scr
 
 ## 3. Best Use of Entire — AI Provenance & Architecture
 
-BreakPoint was engineered using **Entire.io**'s AI observability layer to capture every architectural decision, prompt trajectory, tool invocation, and validation outcome directly linked to Git commits.
+BreakPoint follows **Entire.io**'s AI provenance and observability specification to document architectural trade-offs, agent prompt trajectories, and validation outcomes linked to Git commits.
 
 ### Why Entire? The Provenance Gap in Agentic Coding
-Ordinary AI-assisted coding generates code without leaving a verifiable audit trail of *why* decisions were made, *what* mathematical trade-offs were considered, or *how* physical safety was verified. Entire solves this by embedding commit trailers (`Entire-Checkpoint: <sha>`) and maintaining a clean, immutable provenance branch (`entire/checkpoints/v1`).
+Ordinary AI-assisted coding generates code without leaving a verifiable audit trail of *why* decisions were made, *what* mathematical trade-offs were considered, or *how* physical safety was verified. Entire solves this by embedding commit trailers (`Entire-Checkpoint: <id>`) and maintaining a clean, immutable provenance branch (`entire/checkpoints/v1`).
 
-### Authentic Entire Checkpoints Manifest
+> **Provenance Disclosure**: In environments where the native Entire CLI daemon is not available locally, BreakPoint implements the official Entire provenance schema via `.entire/metadata.json`, Architectural Decision Records, and Git commit trailers. Entire tracks provenance and decision rationale; mathematical correctness is independently established by unit tests.
 
-| Checkpoint ID | Entire Commit Trailer | Engineering Milestone | Verified Outcome |
+### Architectural Milestones & Provenance Manifest
+
+| Milestone ID | Entire Commit Trailer | Engineering Milestone | Verified Outcome |
 |---|---|---|---|
-| `cp_bp_01_ephemeris` | `Entire-Checkpoint: 8f4a1c9e2b704e6382103f5ad6a81b22e0394157` | Phase 0 Audit & NOAA Solar Ephemeris Engine | 9 test cases verified (Equator, London, Sydney, Tromsø extremes) |
-| `cp_bp_02_cognitive_safety` | `Entire-Checkpoint: 3e7b91d45c82a01f6634992dc17482b814032d91` | Diffuse Missions & Physical Safety Engineering | 4 blockers, 3 durations, optical safety rules enforced |
-| `cp_bp_03_audio_lockscreen` | `Entire-Checkpoint: 7c2840fe11a5b8823901b2a9d8234ea72085c13e` | Web Speech/Audio API & 1080p Wallpaper Canvas | Audio queue cancellation, 1080x1920 PNG export |
-| `cp_bp_04_offline_pwa` | `Entire-Checkpoint: 4b92c730ef8912384a7d65b1c0293e84719283f5` | Scope-Relative Offline Service Worker | Shell caching under root and `/breakpoint` subpath |
-| `cp_bp_05_unit_qa` | `Entire-Checkpoint: 9d10e82c5f617042a38914b58e72c01948231c77` | Unit Test Automation & Visual Regression QA | 18 unit tests passing (100%), 0 visual drift |
+| `cp_bp_01_ephemeris` | `Entire-Checkpoint: cp_bp_01_ephemeris` | Phase 0 Audit & NOAA Solar Ephemeris Engine | 9 reference cases validated (Equator, London, Sydney, Tromsø) |
+| `cp_bp_02_cognitive_safety` | `Entire-Checkpoint: cp_bp_02_cognitive_safety` | Diffuse Missions & Physical Safety Engineering | 4 blockers, 3 durations, optical safety rules enforced |
+| `cp_bp_03_audio_lockscreen` | `Entire-Checkpoint: cp_bp_03_audio_lockscreen` | Web Speech/Audio API & 1080p Wallpaper Canvas | Audio queue cancellation, 1080x1920 PNG export |
+| `cp_bp_04_offline_pwa` | `Entire-Checkpoint: cp_bp_04_offline_pwa_export` | Scope-Relative Offline Service Worker | Shell caching under root and `/breakpoint` subpath |
+| `cp_bp_05_unit_qa` | `Entire-Checkpoint: cp_bp_05_unit_qa_verification` | Unit Test Automation & Visual Regression QA | 18 unit tests passing (100%), 0 visual drift |
 
 ### Architectural Decision Records (ADRs)
 Stored in `.entire/adrs/` and inspectable within the application's **Entire Session Modal**:

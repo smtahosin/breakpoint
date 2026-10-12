@@ -5,8 +5,8 @@ import {
   COGNITIVE_BLOCKERS,
   CognitiveBlockerId,
   ResetDurationMinutes
-} from '../src/lib/cognitive-engine.ts';
-import { calculateSolarTelemetry } from '../src/lib/solar-engine.ts';
+} from '../src/lib/cognitive-engine';
+import { calculateSolarTelemetry } from '../src/lib/solar-engine';
 
 describe('BreakPoint Cognitive Engine — Deterministic Reset Missions', () => {
   const mockDaySolar = calculateSolarTelemetry(23.8103, 90.4125, new Date('2026-05-15T06:00:00Z'));

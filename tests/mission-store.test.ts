@@ -1,8 +1,8 @@
 import { describe, it, beforeEach } from 'node:test';
 import assert from 'node:assert/strict';
-import { getStoredMission, saveStoredMission, createAndSaveMission } from '../src/lib/mission-store.ts';
-import { calculateSolarTelemetry } from '../src/lib/solar-engine.ts';
-import { generateBreakMission } from '../src/lib/cognitive-engine.ts';
+import { getStoredMission, saveStoredMission, createAndSaveMission } from '../src/lib/mission-store';
+import { calculateSolarTelemetry } from '../src/lib/solar-engine';
+import { generateBreakMission } from '../src/lib/cognitive-engine';
 
 describe('BreakPoint Mission Store — Persistence & SSR Fallback', () => {
   const solar = calculateSolarTelemetry(23.8103, 90.4125, new Date('2026-05-15T06:00:00Z'));

@@ -114,72 +114,73 @@ export default function EntireSessionModal({ isOpen, onClose }: EntireSessionMod
               <div className="checkpoints-list" style={{ display: 'flex', flexDirection: 'column', gap: '14px', marginBottom: '16px' }}>
                 <div className="checkpoint-card" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '10px', padding: '14px' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '6px' }}>
-                    <span className="pill green" style={{ fontSize: '0.7rem', fontWeight: 700, background: 'rgba(34, 197, 94, 0.15)', color: '#4ade80', padding: '2px 8px', borderRadius: '4px' }}>CP-01 • Solar Ephemeris</span>
-                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.72rem', color: '#94a3b8' }}>8f4a1c9e2b704e6382103f5ad6a81b22e0394157</span>
+                    <span className="pill green" style={{ fontSize: '0.7rem', fontWeight: 700, background: 'rgba(34, 197, 94, 0.15)', color: '#4ade80', padding: '2px 8px', borderRadius: '4px' }}>Milestone 01 • Solar Ephemeris</span>
+                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.72rem', color: '#94a3b8' }}>Commit: 048aec2</span>
                   </div>
                   <h4 style={{ fontSize: '0.9rem', color: '#ffffff', margin: '4px 0' }}>NOAA Spencer/Meeus Solar Ephemeris Engine</h4>
                   <p style={{ fontSize: '0.8rem', color: '#94a3b8', margin: '0 0 6px', lineHeight: 1.4 }}>Replaced prototype sun simulation with deterministic Meeus equations. Validated 9 test cases (Equator equinox, London solstice, Sydney noon, Tromsø polar extremes).</p>
-                  <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#22c55e' }}>Entire-Checkpoint: 8f4a1c9e2b704e6382103f5ad6a81b22e0394157</div>
+                  <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#22c55e' }}>Entire-Checkpoint: cp_bp_01_ephemeris</div>
                 </div>
 
                 <div className="checkpoint-card" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '10px', padding: '14px' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '6px' }}>
-                    <span className="pill green" style={{ fontSize: '0.7rem', fontWeight: 700, background: 'rgba(34, 197, 94, 0.15)', color: '#4ade80', padding: '2px 8px', borderRadius: '4px' }}>CP-02 • Cognitive Engine</span>
-                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.72rem', color: '#94a3b8' }}>3e7b91d45c82a01f6634992dc17482b814032d91</span>
+                    <span className="pill green" style={{ fontSize: '0.7rem', fontWeight: 700, background: 'rgba(34, 197, 94, 0.15)', color: '#4ade80', padding: '2px 8px', borderRadius: '4px' }}>Milestone 02 • Cognitive Engine</span>
+                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.72rem', color: '#94a3b8' }}>Commit: 048aec2</span>
                   </div>
                   <h4 style={{ fontSize: '0.9rem', color: '#ffffff', margin: '4px 0' }}>Diffuse Missions &amp; Physical Safety Constraints</h4>
                   <p style={{ fontSize: '0.8rem', color: '#94a3b8', margin: '0 0 6px', lineHeight: 1.4 }}>Engineered deterministic mission generator for 4 blockers and 3 durations. Enforced optical safety (never look at sun) and night sky adaptation.</p>
-                  <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#22c55e' }}>Entire-Checkpoint: 3e7b91d45c82a01f6634992dc17482b814032d91</div>
+                  <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#22c55e' }}>Entire-Checkpoint: cp_bp_02_cognitive_safety</div>
                 </div>
 
                 <div className="checkpoint-card" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '10px', padding: '14px' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '6px' }}>
-                    <span className="pill green" style={{ fontSize: '0.7rem', fontWeight: 700, background: 'rgba(34, 197, 94, 0.15)', color: '#4ade80', padding: '2px 8px', borderRadius: '4px' }}>CP-03 • Acoustic &amp; Card</span>
-                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.72rem', color: '#94a3b8' }}>7c2840fe11a5b8823901b2a9d8234ea72085c13e</span>
+                    <span className="pill green" style={{ fontSize: '0.7rem', fontWeight: 700, background: 'rgba(34, 197, 94, 0.15)', color: '#4ade80', padding: '2px 8px', borderRadius: '4px' }}>Milestone 03 • Acoustic &amp; Card</span>
+                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.72rem', color: '#94a3b8' }}>Commit: 048aec2</span>
                   </div>
                   <h4 style={{ fontSize: '0.9rem', color: '#ffffff', margin: '4px 0' }}>Native Web Speech/Audio API &amp; 1080p Wallpaper Canvas</h4>
                   <p style={{ fontSize: '0.8rem', color: '#94a3b8', margin: '0 0 6px', lineHeight: 1.4 }}>Browser-native speech synthesis with queue cancellation, 432Hz ambient drone, and HTML5 canvas 1080x1920 lockscreen wallpaper export.</p>
-                  <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#22c55e' }}>Entire-Checkpoint: 7c2840fe11a5b8823901b2a9d8234ea72085c13e</div>
+                  <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#22c55e' }}>Entire-Checkpoint: cp_bp_03_audio_lockscreen</div>
                 </div>
 
                 <div className="checkpoint-card" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '10px', padding: '14px' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '6px' }}>
-                    <span className="pill green" style={{ fontSize: '0.7rem', fontWeight: 700, background: 'rgba(34, 197, 94, 0.15)', color: '#4ade80', padding: '2px 8px', borderRadius: '4px' }}>CP-04 • Offline PWA</span>
-                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.72rem', color: '#94a3b8' }}>4b92c730ef8912384a7d65b1c0293e84719283f5</span>
+                    <span className="pill green" style={{ fontSize: '0.7rem', fontWeight: 700, background: 'rgba(34, 197, 94, 0.15)', color: '#4ade80', padding: '2px 8px', borderRadius: '4px' }}>Milestone 04 • Offline PWA</span>
+                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.72rem', color: '#94a3b8' }}>Commit: 048aec2</span>
                   </div>
                   <h4 style={{ fontSize: '0.9rem', color: '#ffffff', margin: '4px 0' }}>Scope-Relative Offline Caching &amp; Subpath Resolver</h4>
                   <p style={{ fontSize: '0.8rem', color: '#94a3b8', margin: '0 0 6px', lineHeight: 1.4 }}>Service worker caching shell assets relative to registration scope; asset-path helper supporting GitHub Pages /breakpoint subpath.</p>
-                  <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#22c55e' }}>Entire-Checkpoint: 4b92c730ef8912384a7d65b1c0293e84719283f5</div>
+                  <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#22c55e' }}>Entire-Checkpoint: cp_bp_04_offline_pwa_export</div>
                 </div>
 
                 <div className="checkpoint-card" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '10px', padding: '14px' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '6px' }}>
-                    <span className="pill green" style={{ fontSize: '0.7rem', fontWeight: 700, background: 'rgba(34, 197, 94, 0.15)', color: '#4ade80', padding: '2px 8px', borderRadius: '4px' }}>CP-05 • Test &amp; QA</span>
-                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.72rem', color: '#94a3b8' }}>9d10e82c5f617042a38914b58e72c01948231c77</span>
+                    <span className="pill green" style={{ fontSize: '0.7rem', fontWeight: 700, background: 'rgba(34, 197, 94, 0.15)', color: '#4ade80', padding: '2px 8px', borderRadius: '4px' }}>Milestone 05 • Test &amp; QA</span>
+                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.72rem', color: '#94a3b8' }}>Commit: 048aec2</span>
                   </div>
                   <h4 style={{ fontSize: '0.9rem', color: '#ffffff', margin: '4px 0' }}>18 Automated Unit Tests &amp; Multi-Viewport Visual QA</h4>
                   <p style={{ fontSize: '0.8rem', color: '#94a3b8', margin: '0 0 6px', lineHeight: 1.4 }}>All 18 tests passing across solar math, cognitive engine, and persistence. Visual regression passed on desktop (1536x1024) and mobile (390x844).</p>
-                  <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#22c55e' }}>Entire-Checkpoint: 9d10e82c5f617042a38914b58e72c01948231c77</div>
+                  <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#22c55e' }}>Entire-Checkpoint: cp_bp_05_unit_qa_verification</div>
                 </div>
               </div>
 
               <div className="code-stream">
                 <div className="code-header">
                   <Terminal size={14} color="#22c55e" />
-                  <span>Entire Branch Manifest // entire/checkpoints/v1</span>
+                  <span>Entire Provenance Architecture // entire/checkpoints/v1</span>
                 </div>
                 <pre className="code-block">
 {`[ENTIRE PROVENANCE MANIFEST: smtahosin/breakpoint]
 Branch: entire/checkpoints/v1
-Platform: Entire.io AI Observability Layer
-Agent Environment: Claude Code & Antigravity IDE
+Repository: https://github.com/smtahosin/breakpoint
+Active Commit: 048aec2cad20150470c4862683264416507ea918
+Architecture Standard: Entire.io AI Observability Specification
 
-Checkpoints Recorded:
-  • cp_bp_01_ephemeris        [Entire-Checkpoint: 8f4a1c9e2b704e6382103f5ad6a81b22e0394157]
-  • cp_bp_02_cognitive_safety [Entire-Checkpoint: 3e7b91d45c82a01f6634992dc17482b814032d91]
-  • cp_bp_03_audio_lockscreen [Entire-Checkpoint: 7c2840fe11a5b8823901b2a9d8234ea72085c13e]
-  • cp_bp_04_offline_pwa      [Entire-Checkpoint: 4b92c730ef8912384a7d65b1c0293e84719283f5]
-  • cp_bp_05_unit_qa          [Entire-Checkpoint: 9d10e82c5f617042a38914b58e72c01948231c77]
+Engineering Milestones:
+  • cp_bp_01_ephemeris        [NOAA Spencer/Meeus Solar Ephemeris Engine]
+  • cp_bp_02_cognitive_safety [Diffuse Missions & Physical Safety Engineering]
+  • cp_bp_03_audio_lockscreen [Web Speech/Audio API & 1080p Wallpaper Canvas]
+  • cp_bp_04_offline_pwa      [Scope-Relative Offline Service Worker]
+  • cp_bp_05_unit_qa          [18 Automated Unit Tests & Visual Regression QA]
 
 Architectural Decision Records:
   • ADR-001: Deterministic NOAA Solar Physics vs. Probabilistic LLM Generation
@@ -234,7 +235,7 @@ Architectural Decision Records:
         <div className="modal-footer">
           <div className="footer-meta">
             <CheckCircle size={16} color="#22c55e" />
-            <span>Entire Session Verified &bull; SHA-256 Validated</span>
+            <span>Architectural Decisions &bull; Local Engineering Audit</span>
           </div>
           <button className="btn-primary" onClick={onClose}>
             <span>Got It</span>

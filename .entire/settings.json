@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "commit_linking": "always",
+  "absolute_git_hook_path": true,
+  "checkpoints": {
+    "primary": {
+      "type": "git-branch"
+    }
+  }
+}
