@@ -35,10 +35,10 @@ export function downloadPocketFieldCard(mission: BreakMission): Promise<void> {
     ctx.save();
     ctx.beginPath();
     ctx.roundRect(marginX, marginY, width, height, radius);
-    ctx.fillStyle = '#0d1522';
+    ctx.fillStyle = '#081a14';
     ctx.fill();
     ctx.lineWidth = 3;
-    ctx.strokeStyle = 'rgba(255, 255, 255, 0.14)';
+    ctx.strokeStyle = 'rgba(34, 197, 94, 0.25)';
     ctx.stroke();
     ctx.clip(); // Clip for all inner elements
 

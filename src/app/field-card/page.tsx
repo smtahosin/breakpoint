@@ -360,6 +360,7 @@ export default function FieldCardPage() {
           display: flex;
           align-items: center;
           padding: 24px 0 36px;
+          background: radial-gradient(circle at 70% 35%, rgba(34, 197, 94, 0.1), transparent 60%);
         }
 
         .field-card-grid {
@@ -419,12 +420,12 @@ export default function FieldCardPage() {
         /* Audio Brief Card */
         .audio-brief-card {
           width: 100%;
-          background: rgba(13, 20, 31, 0.85);
-          border: 1px solid rgba(255, 255, 255, 0.1);
+          background: rgba(8, 22, 17, 0.88);
+          border: 1px solid rgba(34, 197, 94, 0.25);
           border-radius: 14px;
           padding: 14px 18px;
           margin-bottom: 18px;
-          box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7), 0 0 20px rgba(34, 197, 94, 0.1);
         }
 
         .audio-card-header {
@@ -725,8 +726,8 @@ export default function FieldCardPage() {
         }
 
         .pdf-modal-box {
-          background: #090e17;
-          border: 1px solid rgba(255, 255, 255, 0.12);
+          background: #081711;
+          border: 1px solid rgba(34, 197, 94, 0.25);
           border-radius: 16px;
           max-width: 580px;
           width: 100%;

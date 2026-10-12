@@ -257,8 +257,8 @@ Architectural Decision Records:
         }
 
         .modal-content {
-          background: #090e17;
-          border: 1px solid rgba(255, 255, 255, 0.12);
+          background: #081711;
+          border: 1px solid rgba(34, 197, 94, 0.25);
           border-radius: 16px;
           max-width: 820px;
           width: 100%;

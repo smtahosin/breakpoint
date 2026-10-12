@@ -197,6 +197,7 @@ export default function SciencePage() {
           display: flex;
           align-items: center;
           padding: 24px 0 36px;
+          background: radial-gradient(circle at 70% 35%, rgba(34, 197, 94, 0.1), transparent 60%);
         }
 
         .science-grid {
@@ -251,8 +252,8 @@ export default function SciencePage() {
         /* Brain Dual Card */
         .brain-dual-card {
           width: 100%;
-          background: rgba(13, 20, 31, 0.85);
-          border: 1px solid rgba(255, 255, 255, 0.1);
+          background: rgba(8, 22, 17, 0.9);
+          border: 1px solid rgba(34, 197, 94, 0.28);
           border-radius: 16px;
           padding: 18px;
           display: grid;
@@ -260,7 +261,7 @@ export default function SciencePage() {
           gap: 12px;
           align-items: center;
           margin-bottom: 24px;
-          box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.7), 0 0 25px rgba(34, 197, 94, 0.12);
         }
 
         .mode-column {
@@ -423,9 +424,9 @@ export default function SciencePage() {
           inset: 0;
           background: linear-gradient(
             to bottom,
-            rgba(7, 10, 15, 0.1) 0%,
-            rgba(7, 10, 15, 0.25) 60%,
-            rgba(7, 10, 15, 0.8) 100%
+            rgba(5, 13, 10, 0.1) 0%,
+            rgba(5, 13, 10, 0.25) 60%,
+            rgba(5, 13, 10, 0.8) 100%
           );
         }
 

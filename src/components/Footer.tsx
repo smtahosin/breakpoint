@@ -82,8 +82,8 @@ export default function Footer({ onOpenEntireModal }: FooterProps) {
 
       <style jsx>{`
         .global-footer {
-          border-top: 1px solid rgba(255, 255, 255, 0.08);
-          background: #04070c;
+          border-top: 1px solid rgba(34, 197, 94, 0.16);
+          background: #030806;
           padding: 60px 0 36px;
           margin-top: 80px;
         }

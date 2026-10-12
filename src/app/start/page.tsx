@@ -357,6 +357,7 @@ export default function StartPage() {
           display: flex;
           align-items: center;
           padding: 24px 0 36px;
+          background: radial-gradient(circle at 75% 35%, rgba(34, 197, 94, 0.12), transparent 60%);
         }
 
         .start-grid {
@@ -435,12 +436,12 @@ export default function StartPage() {
           align-items: center;
           gap: 8px;
           padding: 8px 12px;
-          background: rgba(13, 20, 31, 0.7);
-          border: 1px solid rgba(255, 255, 255, 0.08);
+          background: rgba(8, 22, 17, 0.85);
+          border: 1px solid rgba(34, 197, 94, 0.18);
           border-radius: 8px;
           font-size: 0.8125rem;
           font-weight: 500;
-          color: #cbd5e1;
+          color: #d1fae5;
           cursor: pointer;
           transition: all 0.2s;
         }
@@ -470,12 +471,12 @@ export default function StartPage() {
         .duration-pill {
           flex: 1;
           padding: 7px 12px;
-          background: rgba(13, 20, 31, 0.7);
-          border: 1px solid rgba(255, 255, 255, 0.08);
+          background: rgba(8, 22, 17, 0.85);
+          border: 1px solid rgba(34, 197, 94, 0.18);
           border-radius: 8px;
           font-size: 0.8125rem;
           font-weight: 600;
-          color: #94a3b8;
+          color: #a7f3d0;
           text-align: center;
           transition: all 0.2s;
         }
@@ -520,8 +521,8 @@ export default function StartPage() {
         .location-input-wrapper {
           display: flex;
           align-items: center;
-          background: rgba(13, 20, 31, 0.85);
-          border: 1px solid rgba(255, 255, 255, 0.14);
+          background: rgba(8, 22, 17, 0.88);
+          border: 1px solid rgba(34, 197, 94, 0.22);
           border-radius: 10px;
           padding: 3px 8px 3px 14px;
           transition: border-color 0.2s;
@@ -606,8 +607,8 @@ export default function StartPage() {
         }
 
         .telemetry-card {
-          background: rgba(13, 20, 31, 0.7);
-          border: 1px solid rgba(255, 255, 255, 0.08);
+          background: rgba(8, 22, 17, 0.85);
+          border: 1px solid rgba(34, 197, 94, 0.18);
           border-radius: 12px;
           padding: 12px 10px;
           display: flex;
@@ -685,9 +686,9 @@ export default function StartPage() {
           inset: 0;
           background: linear-gradient(
             to bottom,
-            rgba(7, 10, 15, 0.15) 0%,
-            rgba(7, 10, 15, 0.35) 60%,
-            rgba(7, 10, 15, 0.8) 100%
+            rgba(5, 13, 10, 0.1) 0%,
+            rgba(5, 13, 10, 0.3) 60%,
+            rgba(5, 13, 10, 0.85) 100%
           );
         }
 
@@ -697,11 +698,11 @@ export default function StartPage() {
           top: 32px;
           right: 28px;
           width: 260px;
-          background: rgba(13, 20, 31, 0.92);
-          border: 1px solid rgba(255, 255, 255, 0.14);
+          background: rgba(6, 18, 14, 0.94);
+          border: 1px solid rgba(34, 197, 94, 0.35);
           border-radius: 14px;
           padding: 16px 14px 12px;
-          box-shadow: 0 16px 36px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 16px 36px rgba(0, 0, 0, 0.8), 0 0 25px rgba(34, 197, 94, 0.2);
           backdrop-filter: blur(12px);
           z-index: 10;
         }

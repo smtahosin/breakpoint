@@ -176,6 +176,7 @@ export default function HomePage() {
           align-items: center;
           padding: 24px 0 36px;
           overflow: hidden;
+          background: radial-gradient(circle at 70% 35%, rgba(34, 197, 94, 0.1), transparent 60%);
         }
 
         .hero-container {
@@ -243,12 +244,12 @@ export default function HomePage() {
           align-items: center;
           gap: 8px;
           padding: 8px 14px;
-          background: rgba(13, 20, 31, 0.75);
-          border: 1px solid rgba(255, 255, 255, 0.08);
+          background: rgba(8, 22, 17, 0.85);
+          border: 1px solid rgba(34, 197, 94, 0.22);
           border-radius: 8px;
           font-size: 0.8125rem;
           font-weight: 500;
-          color: #cbd5e1;
+          color: #d1fae5;
           backdrop-filter: blur(6px);
         }
 
@@ -349,9 +350,9 @@ export default function HomePage() {
           inset: 0;
           background: linear-gradient(
             to bottom,
-            rgba(7, 10, 15, 0.1) 0%,
-            rgba(7, 10, 15, 0.2) 60%,
-            rgba(7, 10, 15, 0.75) 100%
+            rgba(5, 13, 10, 0.1) 0%,
+            rgba(5, 13, 10, 0.25) 60%,
+            rgba(5, 13, 10, 0.8) 100%
           );
           pointer-events: none;
         }
@@ -398,13 +399,13 @@ export default function HomePage() {
         }
 
         .video-modal-card {
-          background: #090e17;
-          border: 1px solid rgba(255, 255, 255, 0.12);
+          background: #081711;
+          border: 1px solid rgba(34, 197, 94, 0.25);
           border-radius: 16px;
           max-width: 620px;
           width: 100%;
           padding: 28px;
-          box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9);
+          box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 35px rgba(34, 197, 94, 0.15);
         }
 
         .video-modal-header {
