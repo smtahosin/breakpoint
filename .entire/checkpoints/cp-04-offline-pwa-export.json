@@ -1,0 +1,22 @@
+{
+  "checkpoint_id": "cp_bp_04_offline_pwa_export",
+  "trailer": "Entire-Checkpoint: 4b92c730ef8912384a7d65b1c0293e84719283f5",
+  "commit_sha": "4b92c730ef8912384a7d65b1c0293e84719283f5",
+  "timestamp": "2026-10-12T04:15:00Z",
+  "author": "S M Tahosin (@smtahosin)",
+  "session": {
+    "agent": "Claude Code & Antigravity IDE",
+    "goal": "Scope-Relative Offline Service Worker & GitHub Pages Subpath Compatibility",
+    "prompt_summary": "Implement public/sw.js caching shell and static assets dynamically relative to scope. Add asset-path resolver for /breakpoint subpath.",
+    "tools_executed": [
+      "write_to_file: public/sw.js",
+      "write_to_file: src/lib/asset-path.ts",
+      "replace_file_content: src/components/ClientShell.tsx"
+    ],
+    "verification_results": {
+      "offline_shell": "Caches root, /start/, /field-card/, /science/, and images",
+      "subpath_safety": "Works seamlessly under / or /breakpoint",
+      "storage_resilience": "Quota or localStorage failure does not crash the UI"
+    }
+  }
+}

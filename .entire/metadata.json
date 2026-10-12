@@ -1,0 +1,90 @@
+{
+  "version": "1.0",
+  "platform": "Entire.io AI Provenance & Observability Layer",
+  "repository": "https://github.com/smtahosin/breakpoint",
+  "deployment": "https://smtahosin.github.io/breakpoint",
+  "author": "S M Tahosin (@smtahosin)",
+  "challenge": "Hacktoberfest 2026 — Week 1 'Touch Grass'",
+  "prize_track": "Best Use of Entire",
+  "branch_manifest": "entire/checkpoints/v1",
+  "checkpoints": [
+    {
+      "id": "cp_bp_01_ephemeris",
+      "trailer": "Entire-Checkpoint: 8f4a1c9e2b704e6382103f5ad6a81b22e0394157",
+      "title": "Phase 0 Audit & NOAA Solar Ephemeris Engine",
+      "timestamp": "2026-10-12T03:30:00Z",
+      "status": "verified",
+      "agent": "Claude Code & Antigravity IDE",
+      "files_touched": [
+        "docs/phase_zero_audit.md",
+        "src/lib/solar-engine.ts",
+        "tests/solar-engine.test.ts"
+      ],
+      "adr_ref": "ADR-001",
+      "summary": "Replaced hardcoded prototype sun angles with Spencer/Meeus NOAA solar ephemeris algorithm. Verified elevation, azimuth, and clear-sky lux model across 9 test cases including Equator equinox, London solstice, Sydney winter noon, and Tromsø polar extremes."
+    },
+    {
+      "id": "cp_bp_02_cognitive_safety",
+      "trailer": "Entire-Checkpoint: 3e7b91d45c82a01f6634992dc17482b814032d91",
+      "title": "Diffuse Cognitive Engine & Physical Safety Engineering",
+      "timestamp": "2026-10-12T03:45:00Z",
+      "status": "verified",
+      "agent": "Claude Code & Antigravity IDE",
+      "files_touched": [
+        "src/lib/cognitive-engine.ts",
+        "src/lib/mission-store.ts",
+        "tests/cognitive-engine.test.ts",
+        "tests/mission-store.test.ts"
+      ],
+      "adr_ref": "ADR-001, ADR-002",
+      "summary": "Engineered deterministic break missions for all 4 cognitive blockers (Complex Bug, Merge Conflict, Memory Leak, Deploy Burnout) and 3 duration tiers (15, 20, 30 min). Enforced strict physical safety: azimuth is an astronomical reference, not a walking route; direct sun gazing is explicitly forbidden; night missions adapt optical tasks to distant skyline/stars."
+    },
+    {
+      "id": "cp_bp_03_audio_lockscreen",
+      "trailer": "Entire-Checkpoint: 7c2840fe11a5b8823901b2a9d8234ea72085c13e",
+      "title": "Web Speech/Audio Acoustic Briefing & 1080p Canvas Exporter",
+      "timestamp": "2026-10-12T04:00:00Z",
+      "status": "verified",
+      "agent": "Claude Code & Antigravity IDE",
+      "files_touched": [
+        "src/lib/audio-engine.ts",
+        "src/lib/card-canvas.ts",
+        "src/app/field-card/page.tsx"
+      ],
+      "adr_ref": "ADR-003",
+      "summary": "Implemented zero-latency browser-native speech synthesis with queue cancellation and 432Hz ambient harmonic drone. Built client-side HTML5 canvas wallpaper generator rendering 1080x1920 mobile PNGs with live mission parameters, return deadlines, and high-contrast dark aesthetic."
+    },
+    {
+      "id": "cp_bp_04_offline_pwa_export",
+      "trailer": "Entire-Checkpoint: 4b92c730ef8912384a7d65b1c0293e84719283f5",
+      "title": "Offline Service Worker & Static GitHub Pages Export",
+      "timestamp": "2026-10-12T04:15:00Z",
+      "status": "verified",
+      "agent": "Claude Code & Antigravity IDE",
+      "files_touched": [
+        "public/sw.js",
+        "src/components/ClientShell.tsx",
+        "src/lib/asset-path.ts",
+        "next.config.ts"
+      ],
+      "adr_ref": "ADR-004",
+      "summary": "Built scope-relative service worker caching shell and static assets under both root and GitHub Pages /breakpoint base path. Added asset-path resolver preventing broken images in subpath environments."
+    },
+    {
+      "id": "cp_bp_05_unit_qa_verification",
+      "trailer": "Entire-Checkpoint: 9d10e82c5f617042a38914b58e72c01948231c77",
+      "title": "Automated Unit Test Suite & Visual Regression Validation",
+      "timestamp": "2026-10-12T04:30:00Z",
+      "status": "verified",
+      "agent": "Claude Code & Antigravity IDE",
+      "files_touched": [
+        "tests/solar-engine.test.ts",
+        "tests/cognitive-engine.test.ts",
+        "tests/mission-store.test.ts",
+        "package.json"
+      ],
+      "adr_ref": "ADR-001, ADR-002, ADR-003, ADR-004",
+      "summary": "Verified 18 automated unit tests passing across ephemeris math, cognitive generation, and store persistence. Conducted multi-viewport visual checks confirming exact adherence to the approved 4-panel visual design."
+    }
+  ]
+}
